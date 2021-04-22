@@ -8,5 +8,5 @@ spec:
     app: hms-backend
   ports:
     - protocol: TCP
-      port: 5001
+      port: 3001
       NodePort: 30050
