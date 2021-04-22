@@ -15,4 +15,32 @@ spec:
       - name: hms-backend
         image: oadrianoo/hms-backend:beta
         ports:
-        - containerPort: 5001          
+        - containerPort: 3001
+        env:
+        - name: PORT
+          value: 3001
+        - name: NODE_ENV
+          valueFrom:
+            configMapKeyRef:
+              name: hms-config
+              key: NODE_ENV
+        - name: CLOUD_USER
+          valueFrom:
+            secretMapKeyRef:
+              name: hms-secret
+              key: CLOUD_USER
+        - name: CLOUD_PWD
+          valueFrom:
+            secretMapKeyRef:
+              name: hms-secret
+              key: CLOUD_PWD
+        - name: CLOUD_DB
+          valueFrom:
+            secretMapKeyRef:
+              name: hms-secret
+              key: CLOUD_DB
+        - name: HASH_PASS
+          valueFrom:
+            secretMapKeyRef:
+              name: hms-secret
+              key: HASH_PASS
