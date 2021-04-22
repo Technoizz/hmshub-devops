@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: hms-backend
+spec:
+  selector:
+    matchLabels:
+      app: hms-backend
+  template:
+    metadata:
+      labels:
+        app: hms-backend
+    spec:
+      containers:
+      - name: hms-backend
+        image: oadrianoo/hms-backend:beta
+        ports:
+        - containerPort: 5001          
