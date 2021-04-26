@@ -13,6 +13,6 @@ spec:
     spec:
       containers:
       - name: hms-frontend
-        image: oadrianoo/hms-frontend:beta
+        image: oadrianoo/hms-frontend:latest
         ports:
         - containerPort: 80
