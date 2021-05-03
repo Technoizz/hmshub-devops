@@ -1,0 +1,4 @@
+container:
+  image:
+    version: latest
+  port: 80  

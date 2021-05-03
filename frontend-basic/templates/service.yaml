@@ -8,6 +8,6 @@ spec:
     app: hms-frontend
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 3000
+      port: {{ .Values.container.port }}
+      targetPort: {{ .Values.container.port }}
       nodePort: 30030 
