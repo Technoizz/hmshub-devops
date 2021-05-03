@@ -10,4 +10,4 @@ spec:
     - protocol: TCP
       port: {{ .Values.container.port }}
       targetPort: {{ .Values.container.port }}
-      nodePort: 30030 
+      nodePort: {{ .Values.service.nodePort }} 
