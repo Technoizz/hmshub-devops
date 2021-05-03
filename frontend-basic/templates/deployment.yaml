@@ -13,6 +13,6 @@ spec:
     spec:
       containers:
       - name: hms-frontend
-        image: oadrianoo/hms-frontend:latest
+        image: oadrianoo/hms-frontend:{{ .Values.container.image.version }}
         ports:
-        - containerPort: 80
+        - containerPort: {{ .Values.container.port }}
