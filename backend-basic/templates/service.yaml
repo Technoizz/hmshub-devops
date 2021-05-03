@@ -8,6 +8,6 @@ spec:
     app: hms-backend
   ports:
     - protocol: TCP
-      port: 3002
-      targetPort: 3002
-      nodePort: 30050
+      port: {{ .Values.container.port}}
+      targetPort: {{ .Values.container.port}}
+      nodePort: {{ .Values.service.nodePort }}

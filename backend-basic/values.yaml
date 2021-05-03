@@ -5,3 +5,6 @@ container:
 
 env:
   PORT: "3002"
+
+service:
+  nodePort: 30050  
