@@ -6,7 +6,8 @@ Propósito de Arquivamento dos Arquivos YAML do K8s.
 
 ### Artifacts Repos
 
-Dockerhub
+Docker Hub
+ChartMuseum
 
 ### Deployment
 
