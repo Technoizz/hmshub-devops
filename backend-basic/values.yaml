@@ -1,0 +1,7 @@
+container:
+  image:
+    version: beta
+  port: 3002
+
+env:
+  PORT: "3002"
