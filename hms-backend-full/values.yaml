@@ -38,9 +38,12 @@ securityContext: {}
 
 service:
   type: NodePort
-  port: 80
-  targetPort: 
+  port: 3002
+  nodePort: 30050
 
+env:
+  PORT: "3002"
+    
 ingress:
   enabled: false
   annotations: {}
