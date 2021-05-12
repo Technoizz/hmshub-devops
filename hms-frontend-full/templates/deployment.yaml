@@ -40,7 +40,7 @@ spec:
               protocol: TCP
           livenessProbe:
             httpGet:
-              path: /
+              path: /api/ping
               port: http
           readinessProbe:
             httpGet:
