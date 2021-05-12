@@ -15,3 +15,11 @@ metadata:
 data:
   NODE_ENV: production  
 ---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hms-config
+  namespace: devops
+data:
+  NODE_ENV: devops  
+---
