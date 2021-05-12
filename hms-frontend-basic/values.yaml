@@ -1,8 +1,0 @@
-container:
-  image:
-    version: latest
-  port: 80 
-  targetPort: 3000 
-
-service:
-  nodePort: 30030
